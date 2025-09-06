@@ -1,0 +1,50 @@
+@layer fonts {
+    @font-face {
+        font-family: "Dosis";
+        src: url(/fonts/Dosis-VariableFont_wght.ttf);
+        }
+    @font-face {
+        font-family: "Comfortaa";
+        src: url(/fonts/Comfortaa-VariableFont_wght.ttf);
+    }
+    @font-face {
+        font-family: "ZenLoop";
+        src: url(/fonts/ZenLoop-Regular.ttf);
+    }
+}
+
+@layer global {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    body, h1, h2 {
+        margin: 0;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+body {
+    display: grid;
+}
+
+.title-logo {
+    font-family: "ZenLoop";
+    font-size: 4rem;
+    justify-self: center;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    margin: 0.8rem;
+}
+
+nav button {
+    margin: 0.5rem;
+    font-family: "Dosis";
+}
